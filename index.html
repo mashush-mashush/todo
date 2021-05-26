@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"              content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"           content="Todo List - простое приложение для выполнения ежедневных задач"/>
+    <meta name="google"                content="notranslate"/>
+    <meta name="author"                content="Михаил Матюшенко"/>
+    <link rel="stylesheet"             href="css/index.css"/>
+    <link rel="stylesheet"             href="css/animate.css"/>
+    <link rel="shortcut icon"          href="img/favicon/favicon.png" type="image/png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"/>
+    <title>ToDo</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__header">
+
+        <main class="app" id="app">
+          <div class="app__inner">
+            <div class="app__head">
+              <h1 class="app__head-title">TODO-LIST</h1>
+              <p class="app__head-descr">Создай задачу прямо сейчас!</p>
+            </div>
+            <div class="app__body">
+              <ul class="task-list" id="todo-output">
+                
+              </ul>
+              <form class="task-create" action="#" id="todo-form" autocomplete="off">
+                <input class="input-transparent task-create__input" id="todo-input" placeholder="Описание задачи" type="text"/>
+                <button class="button-blue task-create__submit" id="todo-submit">Создать</button>
+              </form>
+            </div>
+          </div>
+        </main>
+
+      </div>
+      <div class="wrapper__footer"></div>
+    </div>
+
+    <script src="js/App.js"></script>
+    <script src="js/Task.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
